@@ -14,6 +14,10 @@
 		E079B4462D9E7CC200777490 /* FocustimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4452D9E7CC200777490 /* FocustimeTests.swift */; };
 		E079B4502D9E7CC200777490 /* FocustimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B44F2D9E7CC200777490 /* FocustimeUITests.swift */; };
 		E079B4522D9E7CC200777490 /* FocustimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4512D9E7CC200777490 /* FocustimeUITestsLaunchTests.swift */; };
+		E079B45F2D9FCE8100777490 /* GameSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B45E2D9FCE8100777490 /* GameSelectionView.swift */; };
+		E079B4612D9FD19400777490 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4602D9FD19400777490 /* MemoryGameView.swift */; };
+		E079B4632D9FD1B100777490 /* ReactionGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4622D9FD1B100777490 /* ReactionGameView.swift */; };
+		E079B4652D9FD24000777490 /* PatternGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4642D9FD24000777490 /* PatternGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		E079B44B2D9E7CC200777490 /* FocustimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocustimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E079B44F2D9E7CC200777490 /* FocustimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocustimeUITests.swift; sourceTree = "<group>"; };
 		E079B4512D9E7CC200777490 /* FocustimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocustimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E079B45E2D9FCE8100777490 /* GameSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectionView.swift; sourceTree = "<group>"; };
+		E079B4602D9FD19400777490 /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		E079B4622D9FD1B100777490 /* ReactionGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionGameView.swift; sourceTree = "<group>"; };
+		E079B4642D9FD24000777490 /* PatternGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		E079B4332D9E7CC000777490 /* Focustime */ = {
 			isa = PBXGroup;
 			children = (
+				E079B4642D9FD24000777490 /* PatternGameView.swift */,
+				E079B4622D9FD1B100777490 /* ReactionGameView.swift */,
+				E079B4602D9FD19400777490 /* MemoryGameView.swift */,
+				E079B45E2D9FCE8100777490 /* GameSelectionView.swift */,
 				E079B4342D9E7CC000777490 /* FocustimeApp.swift */,
 				E079B4362D9E7CC000777490 /* ContentView.swift */,
 				E079B4382D9E7CC100777490 /* Assets.xcassets */,
@@ -257,6 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E079B45F2D9FCE8100777490 /* GameSelectionView.swift in Sources */,
+				E079B4652D9FD24000777490 /* PatternGameView.swift in Sources */,
+				E079B4632D9FD1B100777490 /* ReactionGameView.swift in Sources */,
+				E079B4612D9FD19400777490 /* MemoryGameView.swift in Sources */,
 				E079B4372D9E7CC000777490 /* ContentView.swift in Sources */,
 				E079B4352D9E7CC000777490 /* FocustimeApp.swift in Sources */,
 			);
