@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 struct GameSelectionView: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.indigo.opacity(0.8), .blue.opacity(0.6)]),
@@ -51,6 +52,20 @@ struct GameSelectionView: View {
                         .cornerRadius(12)
                         .shadow(radius: 5)
                 }
+                
+                Button(action: {
+                                    dismiss()
+                                }) {
+                                    Text("⬅️ Zurück")
+                                        .font(.title3)
+                                        .padding()
+                                        .frame(width: 150)
+                                        .background(Color.white.opacity(0.2))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                        .shadow(radius: 3)
+                                }
+                                .padding(.top, 50)
             }
         }
     }
