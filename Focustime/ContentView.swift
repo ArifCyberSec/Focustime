@@ -11,10 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {  // <-- WICHTIG!
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [.blue.opacity(0.7), .purple.opacity(0.7)]),
-                               startPoint: .top,
-                               endPoint: .bottom)
-                    .ignoresSafeArea()
+                
+                PlayfulBackgroundView()
 
                 VStack(spacing: 30) {
                     Text("FocusTime")
