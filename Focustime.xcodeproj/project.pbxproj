@@ -97,6 +97,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E01D871E2DA3EBCE009D400D /* PlayfulBackground */ = {
+			isa = PBXGroup;
+			children = (
+				E079B46B2DA1E9CE00777490 /* lion.json */,
+				E079B46D2DA1E9D800777490 /* bird.json */,
+				E079B4662DA1E34C00777490 /* PlayfulBackgroundView.swift */,
+				E079B46F2DA1EA3D00777490 /* AnimatedAnimalView.swift */,
+			);
+			path = PlayfulBackground;
+			sourceTree = "<group>";
+		};
+		E01D87212DA3ECF7009D400D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E079B4642D9FD24000777490 /* PatternGameView.swift */,
+				E079B4622D9FD1B100777490 /* ReactionGameView.swift */,
+				E079B4602D9FD19400777490 /* MemoryGameView.swift */,
+				E079B45E2D9FCE8100777490 /* GameSelectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E079B4282D9E7CC000777490 = {
 			isa = PBXGroup;
 			children = (
@@ -120,17 +142,10 @@
 		E079B4332D9E7CC000777490 /* Focustime */ = {
 			isa = PBXGroup;
 			children = (
-				E079B46A2DA1E8BC00777490 /* Animations */,
-				E079B4642D9FD24000777490 /* PatternGameView.swift */,
-				E079B4622D9FD1B100777490 /* ReactionGameView.swift */,
-				E079B4602D9FD19400777490 /* MemoryGameView.swift */,
-				E079B46B2DA1E9CE00777490 /* lion.json */,
-				E079B46D2DA1E9D800777490 /* bird.json */,
-				E079B45E2D9FCE8100777490 /* GameSelectionView.swift */,
+				E01D87212DA3ECF7009D400D /* Views */,
+				E01D871E2DA3EBCE009D400D /* PlayfulBackground */,
 				E079B4342D9E7CC000777490 /* FocustimeApp.swift */,
 				E079B4362D9E7CC000777490 /* ContentView.swift */,
-				E079B4662DA1E34C00777490 /* PlayfulBackgroundView.swift */,
-				E079B46F2DA1EA3D00777490 /* AnimatedAnimalView.swift */,
 				E079B4382D9E7CC100777490 /* Assets.xcassets */,
 				E079B43A2D9E7CC100777490 /* Preview Content */,
 			);
@@ -160,13 +175,6 @@
 				E079B4512D9E7CC200777490 /* FocustimeUITestsLaunchTests.swift */,
 			);
 			path = FocustimeUITests;
-			sourceTree = "<group>";
-		};
-		E079B46A2DA1E8BC00777490 /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
