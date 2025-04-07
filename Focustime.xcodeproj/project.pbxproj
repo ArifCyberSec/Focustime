@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01D87162DA3D96A009D400D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87152DA3D96A009D400D /* Lottie */; };
+		E01D87182DA3D96A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87172DA3D96A009D400D /* Lottie-Dynamic */; };
+		E01D871A2DA3D97A009D400D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87192DA3D97A009D400D /* Lottie */; };
+		E01D871C2DA3D97A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D871B2DA3D97A009D400D /* Lottie-Dynamic */; };
 		E079B4352D9E7CC000777490 /* FocustimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4342D9E7CC000777490 /* FocustimeApp.swift */; };
 		E079B4372D9E7CC000777490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4362D9E7CC000777490 /* ContentView.swift */; };
 		E079B4392D9E7CC100777490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E079B4382D9E7CC100777490 /* Assets.xcassets */; };
@@ -23,7 +27,6 @@
 		E079B46E2DA1E9D800777490 /* bird.json in Resources */ = {isa = PBXBuildFile; fileRef = E079B46D2DA1E9D800777490 /* bird.json */; };
 		E079B4702DA1EA3D00777490 /* AnimatedAnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B46F2DA1EA3D00777490 /* AnimatedAnimalView.swift */; };
 		E079B4722DA1EB0400777490 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E079B4712DA1EB0400777490 /* Lottie */; };
-		E079B4742DA1EB0400777490 /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E079B4732DA1EB0400777490 /* Lottie-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E079B4722DA1EB0400777490 /* Lottie in Frameworks */,
-				E079B4742DA1EB0400777490 /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01D87162DA3D96A009D400D /* Lottie in Frameworks */,
+				E01D87182DA3D96A009D400D /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01D871A2DA3D97A009D400D /* Lottie in Frameworks */,
+				E01D871C2DA3D97A009D400D /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +187,6 @@
 			name = Focustime;
 			packageProductDependencies = (
 				E079B4712DA1EB0400777490 /* Lottie */,
-				E079B4732DA1EB0400777490 /* Lottie-Dynamic */,
 			);
 			productName = Focustime;
 			productReference = E079B4312D9E7CC000777490 /* Focustime.app */;
@@ -201,6 +206,10 @@
 				E079B4432D9E7CC200777490 /* PBXTargetDependency */,
 			);
 			name = FocustimeTests;
+			packageProductDependencies = (
+				E01D87152DA3D96A009D400D /* Lottie */,
+				E01D87172DA3D96A009D400D /* Lottie-Dynamic */,
+			);
 			productName = FocustimeTests;
 			productReference = E079B4412D9E7CC200777490 /* FocustimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -219,6 +228,10 @@
 				E079B44D2D9E7CC200777490 /* PBXTargetDependency */,
 			);
 			name = FocustimeUITests;
+			packageProductDependencies = (
+				E01D87192DA3D97A009D400D /* Lottie */,
+				E01D871B2DA3D97A009D400D /* Lottie-Dynamic */,
+			);
 			productName = FocustimeUITests;
 			productReference = E079B44B2D9E7CC200777490 /* FocustimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -652,15 +665,30 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E079B4712DA1EB0400777490 /* Lottie */ = {
+		E01D87152DA3D96A009D400D /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
-		E079B4732DA1EB0400777490 /* Lottie-Dynamic */ = {
+		E01D87172DA3D96A009D400D /* Lottie-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = "Lottie-Dynamic";
+		};
+		E01D87192DA3D97A009D400D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E01D871B2DA3D97A009D400D /* Lottie-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = "Lottie-Dynamic";
+		};
+		E079B4712DA1EB0400777490 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
