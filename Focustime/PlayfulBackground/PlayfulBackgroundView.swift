@@ -17,7 +17,7 @@ struct PlayfulBackgroundView: View {
                            endPoint: .bottom)
                 .ignoresSafeArea()
 
-            // Animierter Vogel links oben fliegend
+            
             AnimatedAnimalView(animationName: "bird")
                 .frame(width: 120, height: 120)
                 .offset(x: -130, y: -250)
@@ -26,6 +26,11 @@ struct PlayfulBackgroundView: View {
             AnimatedAnimalView(animationName: "lion")
                 .frame(width: 140, height: 140)
                 .offset(x: 100, y: 200)
+            
+            // GreenBird – oben rechts
+            AnimatedAnimalView(animationName: "greenbird")
+                .frame(width: 100, height: 100)
+                .offset(x: 130, y: -300) // nach oben rechts
 
             
             Image(systemName: "cloud.fill")

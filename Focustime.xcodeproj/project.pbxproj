@@ -11,6 +11,7 @@
 		E01D87182DA3D96A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87172DA3D96A009D400D /* Lottie-Dynamic */; };
 		E01D871A2DA3D97A009D400D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87192DA3D97A009D400D /* Lottie */; };
 		E01D871C2DA3D97A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D871B2DA3D97A009D400D /* Lottie-Dynamic */; };
+		E01D87252DA3EE1E009D400D /* greenbird.json in Resources */ = {isa = PBXBuildFile; fileRef = E01D87242DA3EE1E009D400D /* greenbird.json */; };
 		E079B4352D9E7CC000777490 /* FocustimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4342D9E7CC000777490 /* FocustimeApp.swift */; };
 		E079B4372D9E7CC000777490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4362D9E7CC000777490 /* ContentView.swift */; };
 		E079B4392D9E7CC100777490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E079B4382D9E7CC100777490 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E01D87242DA3EE1E009D400D /* greenbird.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = greenbird.json; sourceTree = "<group>"; };
 		E079B4312D9E7CC000777490 /* Focustime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focustime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E079B4342D9E7CC000777490 /* FocustimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocustimeApp.swift; sourceTree = "<group>"; };
 		E079B4362D9E7CC000777490 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		E01D871E2DA3EBCE009D400D /* PlayfulBackground */ = {
 			isa = PBXGroup;
 			children = (
+				E01D87242DA3EE1E009D400D /* greenbird.json */,
 				E079B46B2DA1E9CE00777490 /* lion.json */,
 				E079B46D2DA1E9D800777490 /* bird.json */,
 				E079B4662DA1E34C00777490 /* PlayfulBackgroundView.swift */,
@@ -295,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01D87252DA3EE1E009D400D /* greenbird.json in Resources */,
 				E079B43C2D9E7CC100777490 /* Preview Assets.xcassets in Resources */,
 				E079B4392D9E7CC100777490 /* Assets.xcassets in Resources */,
 				E079B46E2DA1E9D800777490 /* bird.json in Resources */,
