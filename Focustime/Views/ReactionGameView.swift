@@ -14,6 +14,7 @@ struct ReactionDot: Identifiable {
 }
 
 struct ReactionGameView: View {
+    @StateObject var highscoreManager = HighscoreManager()
     @State private var dots: [ReactionDot] = []
     @State private var score: Int = 0
     @State private var timeRemaining: Int = 30
@@ -82,6 +83,9 @@ struct ReactionGameView: View {
             } else {
                 timer?.invalidate()
                 gameRunning = false
+
+                //  Highscore speichern
+                highscoreManager.addScore(game: "Reaktion", score: score)
             }
         }
     }

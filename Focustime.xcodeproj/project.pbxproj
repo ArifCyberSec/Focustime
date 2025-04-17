@@ -12,6 +12,8 @@
 		E01D871A2DA3D97A009D400D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87192DA3D97A009D400D /* Lottie */; };
 		E01D871C2DA3D97A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D871B2DA3D97A009D400D /* Lottie-Dynamic */; };
 		E01D87252DA3EE1E009D400D /* greenbird.json in Resources */ = {isa = PBXBuildFile; fileRef = E01D87242DA3EE1E009D400D /* greenbird.json */; };
+		E01D87272DB15997009D400D /* HighscoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D87262DB15997009D400D /* HighscoreManager.swift */; };
+		E01D87292DB15BB4009D400D /* HighscoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D87282DB15BB4009D400D /* HighscoreView.swift */; };
 		E079B4352D9E7CC000777490 /* FocustimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4342D9E7CC000777490 /* FocustimeApp.swift */; };
 		E079B4372D9E7CC000777490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079B4362D9E7CC000777490 /* ContentView.swift */; };
 		E079B4392D9E7CC100777490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E079B4382D9E7CC100777490 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		E01D87242DA3EE1E009D400D /* greenbird.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = greenbird.json; sourceTree = "<group>"; };
+		E01D87262DB15997009D400D /* HighscoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreManager.swift; sourceTree = "<group>"; };
+		E01D87282DB15BB4009D400D /* HighscoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreView.swift; sourceTree = "<group>"; };
 		E079B4312D9E7CC000777490 /* Focustime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focustime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E079B4342D9E7CC000777490 /* FocustimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocustimeApp.swift; sourceTree = "<group>"; };
 		E079B4362D9E7CC000777490 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				E01D871E2DA3EBCE009D400D /* PlayfulBackground */,
 				E079B4342D9E7CC000777490 /* FocustimeApp.swift */,
 				E079B4362D9E7CC000777490 /* ContentView.swift */,
+				E01D87262DB15997009D400D /* HighscoreManager.swift */,
+				E01D87282DB15BB4009D400D /* HighscoreView.swift */,
 				E079B4382D9E7CC100777490 /* Assets.xcassets */,
 				E079B43A2D9E7CC100777490 /* Preview Content */,
 			);
@@ -327,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01D87272DB15997009D400D /* HighscoreManager.swift in Sources */,
+				E01D87292DB15BB4009D400D /* HighscoreView.swift in Sources */,
 				E079B45F2D9FCE8100777490 /* GameSelectionView.swift in Sources */,
 				E079B4652D9FD24000777490 /* PatternGameView.swift in Sources */,
 				E079B4672DA1E34C00777490 /* PlayfulBackgroundView.swift in Sources */,

@@ -16,6 +16,7 @@ struct MemoryCard: Identifiable {
 }
 
 struct MemoryGameView: View {
+    @StateObject var highscoreManager = HighscoreManager()
     @State private var cards: [MemoryCard] = []
     @State private var firstFlippedIndex: Int? = nil
     @State private var attempts: Int = 0
@@ -90,6 +91,13 @@ struct MemoryGameView: View {
                 // Match
                 cards[firstIndex].isMatched = true
                 cards[index].isMatched = true
+
+                // ✅ Check: Sind alle Karten gematcht?
+                if cards.allSatisfy({ $0.isMatched }) {
+                    // ✅ Highscore speichern
+                    highscoreManager.addScore(game: "Memory", score: attempts)
+                }
+
             } else {
                 // Kein Match → zurückdrehen
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {

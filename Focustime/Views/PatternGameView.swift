@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct PatternGameView: View {
+    @StateObject var highscoreManager = HighscoreManager()
     @State private var currentSequence: [Int] = []
     @State private var correctAnswer: Int = 0
     @State private var userAnswer: String = ""
@@ -55,7 +56,7 @@ struct PatternGameView: View {
             .foregroundColor(.white)
             .cornerRadius(10)
 
-            Button("🔁 Neutart") {
+            Button("🔁 Neustart") {
                 startNewRound()
             }
             .foregroundColor(.red)
@@ -121,6 +122,8 @@ struct PatternGameView: View {
             score += 1
             startNewRound()
         } else {
+            // Highscore speichern
+            highscoreManager.addScore(game: "Zahlenmuster", score: score)
             showGameOver = true
         }
     }

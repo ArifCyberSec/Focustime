@@ -30,16 +30,14 @@ struct ContentView: View {
                             .shadow(radius: 5)
                     }
 
-                    Button(action: {
-                        // Highscore-Logik
-                    }) {
-                        Text("🏆 Highscore")
+                    NavigationLink(destination: HighscoreView()) {
+                        Text("🏆 Highscore anzeigen")
                             .font(.title2)
-                            .frame(width: 200, height: 50)
-                            .background(Color.white)
-                            .foregroundColor(.purple)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.orange)
+                            .foregroundColor(.white)
                             .cornerRadius(12)
-                            .shadow(radius: 5)
                     }
 
                     Button(action: {
