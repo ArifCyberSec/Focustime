@@ -12,6 +12,7 @@ struct HighscoreEntry: Identifiable, Codable {
     let id = UUID()
     let gameName: String
     let score: Int
+    let timeInSeconds: Double?
     let date: Date
 }
 
@@ -24,8 +25,8 @@ class HighscoreManager: ObservableObject {
         load()
     }
 
-    func addScore(game: String, score: Int) {
-        let newEntry = HighscoreEntry(gameName: game, score: score, date: Date())
+    func addScore(game: String, score: Int, timeInSeconds: Double? = nil) {
+        let newEntry = HighscoreEntry(gameName: game, score: score, timeInSeconds: timeInSeconds, date: Date())
         scores.append(newEntry)
         save()
     }

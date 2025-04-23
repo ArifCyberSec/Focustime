@@ -14,7 +14,7 @@ struct ContentView: View {
                 
                 PlayfulBackgroundView()
 
-                VStack(spacing: 30) {
+                VStack(spacing: 25) {
                     Text("FocusTime")
                         .font(.largeTitle)
                         .bold()
@@ -23,7 +23,7 @@ struct ContentView: View {
                     NavigationLink(destination: GameSelectionView()) {
                         Text("▶️ Start")
                             .font(.title2)
-                            .frame(width: 200, height: 50)
+                            .frame(width: 250, height: 60)
                             .background(Color.white)
                             .foregroundColor(.blue)
                             .cornerRadius(12)
@@ -31,10 +31,10 @@ struct ContentView: View {
                     }
 
                     NavigationLink(destination: HighscoreView()) {
-                        Text("🏆 Highscore anzeigen")
+                        Text("🏆 Highscore")
                             .font(.title2)
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(width: 250, height: 60)
                             .background(Color.orange)
                             .foregroundColor(.white)
                             .cornerRadius(12)
@@ -45,7 +45,7 @@ struct ContentView: View {
                     }) {
                         Text("❌ Quit")
                             .font(.title2)
-                            .frame(width: 200, height: 50)
+                            .frame(width: 250, height: 60)
                             .background(Color.white)
                             .foregroundColor(.red)
                             .cornerRadius(12)

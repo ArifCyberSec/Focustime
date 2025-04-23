@@ -17,6 +17,8 @@ struct MemoryCard: Identifiable {
 
 struct MemoryGameView: View {
     @StateObject var highscoreManager = HighscoreManager()
+    @State private var startTime: Date?
+    @State private var timeElapsed: Double = 0
     @State private var cards: [MemoryCard] = []
     @State private var firstFlippedIndex: Int? = nil
     @State private var attempts: Int = 0
@@ -73,6 +75,8 @@ struct MemoryGameView: View {
 
     // Neue Karten mischen
     func startNewGame() {
+        startTime = Date()
+        timeElapsed = 0
         var newCards = (symbols + symbols).shuffled().map { MemoryCard(symbol: $0) }
         cards = newCards
         firstFlippedIndex = nil
@@ -94,8 +98,12 @@ struct MemoryGameView: View {
 
                 // ✅ Check: Sind alle Karten gematcht?
                 if cards.allSatisfy({ $0.isMatched }) {
-                    // ✅ Highscore speichern
-                    highscoreManager.addScore(game: "Memory", score: attempts)
+                    if let start = startTime {
+                        timeElapsed = Date().timeIntervalSince(start)
+                    }
+                    
+                    // ✅ Zeit speichern im Highscore
+                    highscoreManager.addScore(game: "Memory", score: attempts, timeInSeconds: timeElapsed)
                 }
 
             } else {

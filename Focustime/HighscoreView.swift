@@ -28,6 +28,9 @@ struct HighscoreView: View {
                         Text("🕹️ \(entry.gameName)")
                             .font(.headline)
                         Text("📈 Punkte: \(entry.score)")
+                        if let time = entry.timeInSeconds {
+                            Text("⏱️ Zeit: \(String(format: "%.1f", time))s")
+                        }
                         Text("📅 \(entry.date.formatted(date: .abbreviated, time: .shortened))")
                             .font(.caption)
                             .foregroundColor(.gray)
