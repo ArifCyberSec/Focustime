@@ -15,7 +15,6 @@ struct HighscoreEntry: Identifiable, Codable {
     let timeInSeconds: Double?
     let date: Date
 }
-
 class HighscoreManager: ObservableObject {
     @Published var scores: [HighscoreEntry] = []
 
@@ -30,6 +29,11 @@ class HighscoreManager: ObservableObject {
         scores.append(newEntry)
         save()
     }
+    func deleteScores(for game: String) {
+        scores.removeAll { $0.gameName == game }
+        save()
+    }
+   
 
     private func save() {
         if let encoded = try? JSONEncoder().encode(scores) {
