@@ -9,7 +9,7 @@ import Foundation
 import Foundation
 
 struct HighscoreEntry: Identifiable, Codable {
-    let id = UUID()
+    var id = UUID()
     let gameName: String
     let score: Int
     let timeInSeconds: Double?

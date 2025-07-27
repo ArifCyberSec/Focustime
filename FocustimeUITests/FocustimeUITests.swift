@@ -1,41 +1,51 @@
-//
-//  FocustimeUITests.swift
-//  FocustimeUITests
-//
-//  Created by Ahmad Arif on 03.04.25.
-//
-
 import XCTest
 
 final class FocustimeUITests: XCTestCase {
+  var app: XCUIApplication!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  override func setUpWithError() throws {
+    continueAfterFailure = false
+    app = XCUIApplication()
+    app.launch()
+  }
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
+  override func tearDownWithError() throws {
+    app.terminate()
+    app = nil
+  }
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
+  func testNavigationThroughGames() throws {
+    let startButton = app.buttons["Start"]
+    XCTAssertTrue(startButton.exists, "Der Start-Button muss vorhanden sein")
+    let highscoreButton = app.buttons["Highscore"]
+    XCTAssertTrue(highscoreButton.exists)
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    startButton.tap()
+    let memoryButton = app.buttons["Memory"]
+    XCTAssertTrue(memoryButton.waitForExistence(timeout: 1.0), "Memory-Button sollte angezeigt werden")
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    
+    memoryButton.tap()
+    let backButton = app.navigationBars.buttons["Back"]
+    XCTAssertTrue(backButton.waitForExistence(timeout: 1.0))
+    backButton.tap()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    
+    let reactionButton = app.buttons["Reaction Game"]
+    XCTAssertTrue(reactionButton.exists)
+    reactionButton.tap()
+    XCTAssertTrue(backButton.waitForExistence(timeout: 1.0))
+    backButton.tap()
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+   
+    let patternButton = app.buttons["Number Pattern"]
+    XCTAssertTrue(patternButton.exists)
+    patternButton.tap()
+    XCTAssertTrue(backButton.waitForExistence(timeout: 1.0))
+    backButton.tap()
+
+   
+    let navBack = app.navigationBars.buttons["StartView"]
+    XCTAssertTrue(navBack.exists)
+  }
 }

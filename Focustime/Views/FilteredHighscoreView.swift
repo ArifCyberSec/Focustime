@@ -61,7 +61,7 @@ struct FilteredHighscoreView: View {
         }
     }
 
-    /// Filtert und sortiert die Scores neu
+    // Filtert die Scores neu
     private func updateScores() {
         filteredScores = highscoreManager.scores
             .filter { $0.gameName == gameName }

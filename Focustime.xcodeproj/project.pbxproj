@@ -10,7 +10,6 @@
 		E01D87162DA3D96A009D400D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87152DA3D96A009D400D /* Lottie */; };
 		E01D87182DA3D96A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87172DA3D96A009D400D /* Lottie-Dynamic */; };
 		E01D871A2DA3D97A009D400D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E01D87192DA3D97A009D400D /* Lottie */; };
-		E01D871C2DA3D97A009D400D /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E01D871B2DA3D97A009D400D /* Lottie-Dynamic */; };
 		E01D87252DA3EE1E009D400D /* greenbird.json in Resources */ = {isa = PBXBuildFile; fileRef = E01D87242DA3EE1E009D400D /* greenbird.json */; };
 		E01D87272DB15997009D400D /* HighscoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D87262DB15997009D400D /* HighscoreManager.swift */; };
 		E01D87292DB15BB4009D400D /* HighscoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D87282DB15BB4009D400D /* HighscoreView.swift */; };
@@ -51,6 +50,19 @@
 			remoteInfo = Focustime;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E00587C32E0C44F90073D31A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E01D87242DA3EE1E009D400D /* greenbird.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = greenbird.json; sourceTree = "<group>"; };
@@ -103,7 +115,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01D871A2DA3D97A009D400D /* Lottie in Frameworks */,
-				E01D871C2DA3D97A009D400D /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +268,7 @@
 				E079B4472D9E7CC200777490 /* Sources */,
 				E079B4482D9E7CC200777490 /* Frameworks */,
 				E079B4492D9E7CC200777490 /* Resources */,
+				E00587C32E0C44F90073D31A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,7 +278,6 @@
 			name = FocustimeUITests;
 			packageProductDependencies = (
 				E01D87192DA3D97A009D400D /* Lottie */,
-				E01D871B2DA3D97A009D400D /* Lottie-Dynamic */,
 			);
 			productName = FocustimeUITests;
 			productReference = E079B44B2D9E7CC200777490 /* FocustimeUITests.xctest */;
@@ -536,6 +547,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,6 +577,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,11 +734,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
-		};
-		E01D871B2DA3D97A009D400D /* Lottie-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E079B4682DA1E57E00777490 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = "Lottie-Dynamic";
 		};
 		E079B4712DA1EB0400777490 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;

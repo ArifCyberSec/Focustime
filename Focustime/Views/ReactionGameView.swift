@@ -25,7 +25,7 @@ struct ReactionGameView: View {
         ZStack {
             Color.white.ignoresSafeArea()
 
-            // Punkte anzeigen
+            // Punkte angeben
             ForEach(dots) { dot in
                 Circle()
                     .fill(Color.red)
@@ -84,7 +84,7 @@ struct ReactionGameView: View {
                 timer?.invalidate()
                 gameRunning = false
 
-                //  Highscore speichern
+                //  Highscore sichernn
                 highscoreManager.addScore(game: "Reaktion", score: score)
             }
         }

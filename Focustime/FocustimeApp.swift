@@ -9,8 +9,7 @@
 //  Focustime
 
 import SwiftUI
-import AVFoundation        // ← brauchen wir für AudioSession-Setup
-
+import AVFoundation
 @main
 struct FocustimeApp: App {
     init() {

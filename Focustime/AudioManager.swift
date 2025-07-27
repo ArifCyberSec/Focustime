@@ -22,8 +22,8 @@ class AudioManager {
 
         do {
             player = try AVAudioPlayer(contentsOf: url)
-            player?.numberOfLoops = -1       // Endlosschleife
-            player?.volume = 1.0             // Lautstärke (0.0–1.0)
+            player?.numberOfLoops = -1
+            player?.volume = 1.0
             player?.prepareToPlay()
             player?.play()
         } catch {
@@ -31,7 +31,7 @@ class AudioManager {
         }
     }
 
-    /// Stoppt die Wiedergabe
+    
     func stopBackgroundMusic() {
         player?.stop()
     }

@@ -96,13 +96,13 @@ struct MemoryGameView: View {
                 cards[firstIndex].isMatched = true
                 cards[index].isMatched = true
 
-                // ✅ Check: Sind alle Karten gematcht?
+                // Check: Sind alle Karten gematcht?
                 if cards.allSatisfy({ $0.isMatched }) {
                     if let start = startTime {
                         timeElapsed = Date().timeIntervalSince(start)
                     }
                     
-                    // ✅ Zeit speichern im Highscore
+                    // Zeit speichern im Highscore
                     highscoreManager.addScore(game: "Memory", score: attempts, timeInSeconds: timeElapsed)
                 }
 
